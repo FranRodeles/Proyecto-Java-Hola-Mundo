@@ -25,7 +25,7 @@ public class ProyectoFinal_Borrador {
 	
 // Se definen las variables del comercio
 	String avanzarDia,cambiarUsuario, jornada, menuAvanzadoDecision, salirUsuario, usuario, verificacionMatriz ;
-	int informacion[][],matrizdiaanterior[][],decision,decisionVentasZona, dia, diaAnterior, n,nAnterior, numRepresentante, verificacion, zonas;
+	int informacion[][],matrizDiaAnterior[][],decision,decisionVentasZona, dia, diaAnterior, n,nAnterior, numRepresentante, verificacion, zonas;
 	
 	boolean ingresoDiarioAdmin, ingresoDiarioUser, ingresoUserAnterior,jornadaFinalizada,llenadoUser, menuAvanzado;
 	boolean rehacerMatriz;
@@ -33,7 +33,7 @@ public class ProyectoFinal_Borrador {
         
         // Se declaran las matrices
         informacion = new int[99][5];    
-        matrizdiaanterior= new int[99][5];
+        matrizDiaAnterior= new int[99][5];
 				
 	
 	// valor predeterminado de variables
@@ -75,14 +75,14 @@ public class ProyectoFinal_Borrador {
                 ingresoDiarioUser=false;
                 nAnterior=n;
                 verificacionAvanceDia(informacion,n,zonas);           // acá aparece un error
-                copiarMatriz(informacion,matrizdiaanterior,n,zonas);  // acá aparece otro error
+                copiarMatriz(informacion,matrizDiaAnterior,n,zonas);  // acá aparece otro error
             }
             }
             }
 	// Subprograma: reiniciar matriz
     // Carlos Gustavo Ortiz
         
-	public static void reiniciarmatriz(double informacion[][], double n, double m) {
+	public static void reiniciarMatriz(double informacion[][], double n, double m) {
 		int i;
 		int j;
 		for (i=0;i<=n-1;i++) {
@@ -93,7 +93,7 @@ public class ProyectoFinal_Borrador {
 	}
     // Subprograma: verificación avance día
     // Carlos Gustavo Ortiz
-	public static void verificacionavancedia(double informacion[][], double n, double m) {
+	public static void verificacionAvanceDia(double informacion[][], double n, double m) {
 		int i;
 		int j;
 		for (i=0;i<=n-1;i++) {
@@ -106,7 +106,7 @@ public class ProyectoFinal_Borrador {
 	}
     // Subprograma: imprimir matriz
     // Carlos Gustavo Ortiz
-	public static void imprimirmatriz(String matriz[][], double n, double m) {
+	public static void imprimirMatriz(String matriz[][], double n, double m) {
 		int i;
 		int j;
 		System.out.println("                N S E O C");
@@ -123,12 +123,12 @@ public class ProyectoFinal_Borrador {
 	}
     //Subprograma: copiar matriz
     // Carlos Gustavo Ortiz
-	public static void copiarmatriz(String informacion[][], String matrizdiaanterior[][], double n, double m) {
+	public static void copiarMatriz(String informacion[][], String matrizDiaAnterior[][], double n, double m) {
 		int i;
 		int j;
 		for (i=0;i<=n-1;i++) {
 			for (j=0;j<=m-1;j++) {
-				matrizdiaanterior[i][j] = informacion[i][j];
+				matrizDiaAnterior[i][j] = informacion[i][j];
 			}
 		}
 	}
