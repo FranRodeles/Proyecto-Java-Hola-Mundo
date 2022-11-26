@@ -2,8 +2,7 @@
 entrada: cantidad de vendedores, ventas x cada zona
 salidas: cada punto que se puede seleccionar en el menú, la matriz impresa en consola
 
-Integrantes del equipo que han trabajado en la traducción de este Proyecto Integrador desde pseint
-a Java:
+Integrantes del equipo que han trabajado en la adaptación del código creado en Fundamentos de las Programación al lenguaje de Java:
 
 - Israel Leonardo Montiel 
 - Carlos Gustavo Ortiz
