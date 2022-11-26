@@ -68,7 +68,22 @@ public class ProyectoFinal_Borrador {
             
 	System.out.println(""); 
 	if (salir==false) {
-	    System.out.println("¿Avanzar de día?(si/no)");
+	    System.out.println("¿Avanzar de día?(si/no)");// Israel Leonardo Montiel 		
+	if (salir==false) {
+            do {
+            System.out.println("¿Quién está ingresando al programa?(admin/user)");
+	    usuario = entrada.nextLine();
+            				
+        while (!(usuario.equals("admin") || usuario.equals("user")));
+	System.out.println(""); 
+        
+        // El programa una vez decidido el usuario, muestra las opciones correspondientes"
+        
+		    
+		    
+		    
+            if (ingresoDiarioUser==false && dia==1) {
+		    
 	       avanzarDia = entrada.nextLine();
             if (avanzarDia.equals("Sí")){
                 dia = dia+1;
@@ -79,6 +94,63 @@ public class ProyectoFinal_Borrador {
             }
             }
             }
+		
+		// Israel Leonardo Montiel 		
+	if (salir==false) {
+            do {
+            System.out.println("¿Quién está ingresando al programa?(admin/user)");
+	    usuario = entrada.nextLine();
+            				
+        while (!(usuario.equals("admin") || usuario.equals("user")));
+	System.out.println(""); 
+        
+        // El programa una vez decidido el usuario, muestra las opciones correspondientes"
+        // Israel Leonardo Montiel 
+	System.out.println("Estamos en el día laboral: " + dia);
+	if (usuario.equals("admin") || usuario.equals("user")) {
+            if (usuario.equals("admin")) {
+                System.out.println("¡Bienvenido Representante!");
+                if (llenadoUser==true) {
+	        System.out.println("Ya se ha llenado la información con los ajustes predeterminados (8 trabajadores");
+						} 
+                else {
+                    do {		// Se solicita al usuario que ingrese el dato por teclado//
+                        System.out.println("¿Cuántos empleados trabajarán durante la jornada de hoy? Recuerde que por defecto son 8 mínimo");
+				n = Integer.parseInt(entrada.nextLine()); // Se lee por consola el número de representantes//
+				} while (n>=8);
+				}
+	// Definimos la matriz, la llamaremos información
+	// El representante decide si quiere ir al menú más avanzado en el caso de que todavía no hubiese finalizado  la jornada laboral debido a que aún no se ha producido un registro de datos.
+	// Se mostrarán los datos del día anterior (con la función aleatorio en el día 1, y guardando la matriz del día anterior en otra variable)
+        // Israel Leonardo Montiel 
+            if (ingresoDiarioUser==false && dia==1) {
+		System.out.println("Todavía no se han ingresado datos");
+						} 
+            else {
+		do {
+                	System.out.println("¿Desea ver el menú avanzado?(si/no)");
+			menuAvanzadoDecision = entrada.nextLine();
+		} while (!(menuAvanzadoDecision.equals("si") || menuAvanzadoDecision.equals("no")));
+	// En caso afirmativo se despliega el menú y se limpia la pantalla
+	if (menuAvanzadoDecision.equals("si")) {
+	// Se muestra la información de n y zonas//
+	System.out.println("¿Qué información desea ver?");
+	do {
+	// Menú de opciones para consola de usuario. El usuario determina UNA decisión por entrada//
+            do {
+		System.out.println(" ");
+		System.out.println("1)Total de ventas por zona");
+		System.out.println("2)Total de los representantes");
+		System.out.println("3)Las ventas de algún representante");
+		System.out.println("4)Ver las ventas de cada representante");
+		System.out.println("5)La mayor venta, y ver que representante la hizo y en qué zona");
+		System.out.println("6)Los datos de las ventas de ayer");
+		System.out.println("7)Limpiar pantalla");
+		System.out.println("8)salir");
+		decision = Integer.parseInt(entrada.nextLine());
+          } while (!(decision>=1 && decision<=8));
+		
+		
 	// Subprograma: reiniciar matriz
     // Carlos Gustavo Ortiz
         
@@ -121,6 +193,8 @@ public class ProyectoFinal_Borrador {
 			System.out.println("]");
 		}
 	}
+		
+		
     //Subprograma: copiar matriz
     // Carlos Gustavo Ortiz
 	public static void copiarMatriz(String informacion[][], String matrizDiaAnterior[][], double n, double m) {
