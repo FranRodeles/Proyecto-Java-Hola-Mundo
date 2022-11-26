@@ -50,9 +50,7 @@ public class ProyectoFinal_Borrador {
 	verificacion = 0;
 	dia = 1;
         n=0;               //******Duda si está bien inicializado
-	
-	
-        
+		       
 	logo();
         
 	System.out.println("¡Bienvenido a Palta! Comida saludable, a tu servicio");
@@ -68,23 +66,8 @@ public class ProyectoFinal_Borrador {
             
 	System.out.println(""); 
 	if (salir==false) {
-	    System.out.println("¿Avanzar de día?(si/no)");// Israel Leonardo Montiel 		
-	if (salir==false) {
-            do {
-            System.out.println("¿Quién está ingresando al programa?(admin/user)");
-	    usuario = entrada.nextLine();
-            				
-        while (!(usuario.equals("admin") || usuario.equals("user")));
-	System.out.println(""); 
-        
-        // El programa una vez decidido el usuario, muestra las opciones correspondientes"
-        
-		    
-		    
-		    
-            if (ingresoDiarioUser==false && dia==1) {
-		    
-	       avanzarDia = entrada.nextLine();
+	    System.out.println("¿Avanzar de día?(si/no)"); 		
+		avanzarDia = entrada.nextLine();
             if (avanzarDia.equals("Sí")){
                 dia = dia+1;
                 ingresoDiarioUser=false;
@@ -94,16 +77,16 @@ public class ProyectoFinal_Borrador {
             }
             }
             }
-		
-		// Israel Leonardo Montiel 		
-	if (salir==false) {
-            do {
+	// Israel Leonardo Montiel	 
+	    if (salir==false) {
+	   	do {
             System.out.println("¿Quién está ingresando al programa?(admin/user)");
 	    usuario = entrada.nextLine();
             				
         while (!(usuario.equals("admin") || usuario.equals("user")));
 	System.out.println(""); 
         
+            
         // El programa una vez decidido el usuario, muestra las opciones correspondientes"
         // Israel Leonardo Montiel 
 	System.out.println("Estamos en el día laboral: " + dia);
