@@ -62,7 +62,8 @@ public class ProyectoFinal_Borrador {
                if (salirUsuario.equals("si")) {
                salir = true;
 	}
-            
+            // Avanzar día
+            // Carlos Gustavo Ortiz
 	System.out.println(""); 
 	if (salir==false) {
 	    System.out.println("¿Avanzar de día?(si/no)"); 		
