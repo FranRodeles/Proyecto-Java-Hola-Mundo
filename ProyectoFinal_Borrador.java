@@ -2,7 +2,7 @@
 entrada: cantidad de vendedores, ventas x cada zona
 salidas: cada punto que se puede seleccionar en el menú, la matriz impresa en consola
 
-En el código se detallan los integrantes del equipo que han participado en la adaptación del código creado en Fundamentos de la
+En el código se especifican los integrantes del equipo que han participado en la adaptación del pseudocódigo creado en Fundamentos de la
 Programación al lenguaje de Java y qué ha trabajado cada uno:
 
  */
