@@ -2,12 +2,9 @@
 entrada: cantidad de vendedores, ventas x cada zona
 salidas: cada punto que se puede seleccionar en el menú, la matriz impresa en consola
 
-Integrantes del equipo que han trabajado en la adaptación del código creado en Fundamentos de las Programación al lenguaje de Java:
+En el código se detallan los integrantes del equipo que han participado en la adaptación del código creado en Fundamentos de la
+Programación al lenguaje de Java y qué ha trabajado cada uno:
 
-- Israel Leonardo Montiel 
-- Carlos Gustavo Ortiz
-
-En el código se detalla qué partes ha trabajado cada integrante. 
  */
 package proyectofinal_borrador;
 
