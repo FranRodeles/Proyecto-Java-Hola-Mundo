@@ -2,7 +2,7 @@
 entrada: cantidad de vendedores, ventas x cada zona
 salidas: cada punto que se puede seleccionar en el menú, la matriz impresa en consola
 
-En el código se especifican los integrantes del equipo que han participado en la adaptación del pseudocódigo creado en Fundamentos de la
+En el código se identifican los integrantes del equipo que han participado en la adaptación del pseudocódigo creado en Fundamentos de la
 Programación al lenguaje de Java y qué ha trabajado cada uno:
 
  */
@@ -19,7 +19,7 @@ public class ProyectoFinal_Borrador {
          Scanner entrada = new Scanner (System.in);
 
 	
-// Se definen las variables del comercio
+        // Se definen las variables del comercio
 	String avanzarDia,cambiarUsuario, jornada, menuAvanzadoDecision, salirUsuario, usuario, verificacionMatriz ;
 	int informacion[][],matrizDiaAnterior[][],decision,decisionVentasZona, dia, diaAnterior, n,nAnterior, numRepresentante, verificacion, zonas;
 	
@@ -33,8 +33,7 @@ public class ProyectoFinal_Borrador {
 				
 	
 	// valor predeterminado de variables
-        
-	ingresoDiarioAdmin = false;
+        ingresoDiarioAdmin = false;
 	jornadaFinalizada = false;
 	menuAvanzado = false;
 	salir = false;
@@ -50,6 +49,7 @@ public class ProyectoFinal_Borrador {
 	logo();
         
 	System.out.println("¡Bienvenido a Palta! Comida saludable, a tu servicio");
+	    
         // Israel Leonardo Montiel 
 	// Se diferencian dos usuarios: por un lado, quien ingresa la cantidad de empleados al sistema; por otro, el empleado que ingresa la cantidad de ventas realizadas.
 	while ((salir!=true)) {
@@ -59,9 +59,10 @@ public class ProyectoFinal_Borrador {
                if (salirUsuario.equals("si")) {
                salir = true;
 	}
-            // Avanzar día
-            // Carlos Gustavo Ortiz
-	System.out.println(""); 
+		    
+        // Carlos Gustavo Ortiz
+	// Avanzar día
+        System.out.println(""); 
 	if (salir==false) {
 	    System.out.println("¿Avanzar de día?(si/no)"); 		
 		avanzarDia = entrada.nextLine();
@@ -83,10 +84,9 @@ public class ProyectoFinal_Borrador {
         while (!(usuario.equals("admin") || usuario.equals("user")));
 	System.out.println(""); 
         
-            
+         // Israel Leonardo Montiel  
         // El programa una vez decidido el usuario, muestra las opciones correspondientes"
-        // Israel Leonardo Montiel 
-	System.out.println("Estamos en el día laboral: " + dia);
+        System.out.println("Estamos en el día laboral: " + dia);
 	if (usuario.equals("admin") || usuario.equals("user")) {
             if (usuario.equals("admin")) {
                 System.out.println("¡Bienvenido Representante!");
@@ -99,10 +99,12 @@ public class ProyectoFinal_Borrador {
 				n = Integer.parseInt(entrada.nextLine()); // Se lee por consola el número de representantes//
 				} while (n>=8);
 				}
+		    
+	// Israel Leonardo Montiel
 	// Definimos la matriz, la llamaremos información
 	// El representante decide si quiere ir al menú más avanzado en el caso de que todavía no hubiese finalizado  la jornada laboral debido a que aún no se ha producido un registro de datos.
 	// Se mostrarán los datos del día anterior (con la función aleatorio en el día 1, y guardando la matriz del día anterior en otra variable)
-        // Israel Leonardo Montiel 
+        
             if (ingresoDiarioUser==false && dia==1) {
 		System.out.println("Todavía no se han ingresado datos");
 						} 
@@ -130,9 +132,9 @@ public class ProyectoFinal_Borrador {
 		decision = Integer.parseInt(entrada.nextLine());
           } while (!(decision>=1 && decision<=8));
 		
-		
+	// Carlos Gustavo Ortiz
 	// Subprograma: reiniciar matriz
-    // Carlos Gustavo Ortiz
+   
         
 	public static void reiniciarMatriz(double informacion[][], double n, double m) {
 		int i;
@@ -143,9 +145,10 @@ public class ProyectoFinal_Borrador {
 			}
 		}
 	}
-    // Subprograma: verificación avance día
-    // Carlos Gustavo Ortiz
-	public static void verificacionAvanceDia(double informacion[][], double n, double m) {
+    
+	// Carlos Gustavo Ortiz
+	// Subprograma: verificación avance día
+   	public static void verificacionAvanceDia(double informacion[][], double n, double m) {
 		int i;
 		int j;
 		for (i=0;i<=n-1;i++) {
@@ -156,9 +159,10 @@ public class ProyectoFinal_Borrador {
 			}
 		}
 	}
-    // Subprograma: imprimir matriz
-    // Carlos Gustavo Ortiz
-	public static void imprimirMatriz(String matriz[][], double n, double m) {
+   
+	// Carlos Gustavo Ortiz
+	// Subprograma: imprimir matriz
+   	public static void imprimirMatriz(String matriz[][], double n, double m) {
 		int i;
 		int j;
 		System.out.println("                N S E O C");
@@ -174,9 +178,9 @@ public class ProyectoFinal_Borrador {
 		}
 	}
 		
-		
-    //Subprograma: copiar matriz
-    // Carlos Gustavo Ortiz
+     // Carlos Gustavo Ortiz		
+     // Subprograma: copiar matriz
+    
 	public static void copiarMatriz(String informacion[][], String matrizDiaAnterior[][], double n, double m) {
 		int i;
 		int j;
@@ -186,9 +190,11 @@ public class ProyectoFinal_Borrador {
 			}
 		}
 	}
-      //Subprograma Mayor venta
-// Se define qué vendedor tiene el mayor número de ventas por zona//
-//Carlos Gustavo Ortiz
+      
+	//Carlos Gustavo Ortiz	
+	//Subprograma Mayor venta
+        // Se define qué vendedor tiene el mayor número de ventas por zona//
+
        	public static void mayorVenta(double n, double zonas, int informacion[][]) {
 		int i;
 		int j;
@@ -230,9 +236,10 @@ public class ProyectoFinal_Borrador {
 			System.out.println(" En la zona "+zona);
 		}
 	}  
-        
-// Logo
-// Carlos Gustavo Ortiz
+		
+     // Carlos Gustavo Ortiz   
+     // Logo
+
 	public static void logo() {
 		System.out.println("            .::::::::..                                                                     ");
 		System.out.println("           .:::::::::::::                                                                   ");
@@ -253,8 +260,7 @@ public class ProyectoFinal_Borrador {
 		System.out.println("             .--------:.                                                                    ");
 		System.out.println("                 ...                                                                         ");
 	}
-        
-        
+              
         
     }
     
