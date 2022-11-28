@@ -2,8 +2,13 @@
 entrada: cantidad de vendedores, ventas x cada zona
 salidas: cada punto que se puede seleccionar en el menú, la matriz impresa en consola
 
-En el código se identifican los integrantes del equipo que han participado en la adaptación del pseudocódigo creado en Fundamentos de la
-Programación al lenguaje de Java y qué ha trabajado cada uno:
+Integrantes del equipo que han participado en la adaptación del pseudocódigo creado en Fundamentos de la
+Programación al lenguaje de Java:
+
+- Israel Leonardo Montiel
+- Carlos Gustavo Ortiz
+
+En el código se detalla en qué ha trabajado cada uno:
 
  */
 package proyectofinal_borrador;
