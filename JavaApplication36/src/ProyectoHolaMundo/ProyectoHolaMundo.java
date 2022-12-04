@@ -273,7 +273,7 @@ public class ProyectoHolaMundo {
 				     informacion[i][j]=0;
 			     } else{
 				     informacion[i][j]=m;
-			     } while(m >= -1 || m <= 10); 
+			     }while(m >= -1 && m <= 10); 
 		     }
 		}
 	    }
