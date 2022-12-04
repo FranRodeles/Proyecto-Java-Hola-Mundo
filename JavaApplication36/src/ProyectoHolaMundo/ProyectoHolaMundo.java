@@ -1,8 +1,15 @@
 /*
+Nosotros somos "Hola mundo", los desarrolladores de este programa para Palta, un delivery de comidas saludables. Para tareas 
+administrativas el país se encuentra dividido en cinco zonas: Norte, Sur, Este, Oeste y Centro. El programa diferencia dos tipos de
+usuarios: admin y user. Cada uno presenta características propias y funcionalidades. También se incluye un sistema de días, para que el
+admin obtenga información precisa sobre la cual trabajar. A partir de distintos parámetros se muestran los datos mediante matrices.
+
 entrada: cantidad de vendedores, ventas x cada zona
 salidas: cada punto que se puede seleccionar en el menú, la matriz impresa en consola
+
 En el código se identifican los integrantes del equipo que han participado en la adaptación del pseudocódigo creado en 
 Fundamentos de la Programación al lenguaje de Java
+
 Se detalla en qué ha trabajado cada uno.
  */
 package ProyectoHolaMundo;
