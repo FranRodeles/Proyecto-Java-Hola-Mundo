@@ -16,6 +16,8 @@ package ProyectoHolaMundo;
 
 import java.util.Scanner;
 
+import java.util.Random; //Rosa
+
 public class ProyectoHolaMundo {
 
     public static void main(String[] args) {
@@ -205,6 +207,11 @@ public class ProyectoHolaMundo {
                                         }
                                     // Carlos Gustavo Ortiz
                                     }while(decision == 8);   // Subprograma: reiniciar matriz
+                                   
+                                    //María Rosa Morales
+                                    
+                                    System.out.println("¡Entendido!");
+                                    System.out.println("¡Gracias por representar a nuestra empresa en su ciudad!");
                                     
                     //Francisco Rodeles
                                 }
@@ -220,8 +227,57 @@ public class ProyectoHolaMundo {
                         n = 8;
                     }
                     //El trabajador puede ingresar la cantidad de ventas realizadas hoy
+                
+                
+     //María Rosa Morales           
+    //Subprograma llenar Matriz
+    public static void llenarMatriz(int n, zonas, int informacion[][], boolean ingresoDiarioUser){
+        int i,j;
+        String nombreZona;
+        Random r=new Random();
+        if (ingresoDiarioUser = False){
+            for (i = 0; i <= n - 1; i++) {
+                for (j = 0; j <= zonas - 1; j++){
+                    informacion[i][j]=r.nextInt(10)
+                    System.out.print(informacion[i][j]+"\t");
+                  }
+            }
+        else {
+            System.out.flush();
+            System.out.println("Recuerde que no pueden haber más de 10 ventas por zona");
+            for (i = 0; i <= n - 1; i++) {
+                for (j = 0; j <= zonas - 1; j++){
+                    switch (j) {
+                        case 0:
+                            zona = "Norte";
+                            break;
+                        case 1:
+                            zona = "Sur";
+                            break;
+                        case 2:
+                            zona = "Este";
+                            break;
+                        case 3:
+                            zona = "Oeste";
+                            break;
+                        case 4:
+                            zona = "Centro";
+                            break;
+          
+    
+    }
+    
+        
                     
 
+        
+        
+      
+	
+        
+        
+        
+        
         
 
     public static void reiniciarMatriz(int informacion[][], double n, double m) { //Ya lo arreglo yo (Francisco Rodeles)
@@ -276,6 +332,51 @@ public class ProyectoHolaMundo {
             }
         }
     }
+                
+                
+     //Maria Rosa Morales
+     // Subprograma Venta Zona
+     public static void ventaZona(double n, double zonas, int informacion[][]){
+         int i, acumuladorVentasZona;
+         String zona = "";
+         acumuladorVentasZona=0;
+         for (i = 0; i <= n - 1; i++) {
+              acumuladorVentasZona=informacion(i,decisionVentasZona-1) + acumuladorVentasZona
+         }
+         
+     }
+                
+     
+     //Maria Rosa Morales        
+    //subprograma Venta Zona Por Representante    
+    public static void ventaZonaRepresentante(double n, double zonas, int informacion[][]){
+        int i;
+        for (i = 1; i <= zonas - 1; i++) {
+        
+    }
+                
+                
+    //Maria Rosa Morales   
+    // subprograma Ventas Representante
+    public static void ventaRepresentante(double n, double zonas, int informacion[][]){
+        int j;
+        int ventaRepresentante;
+        ventaRepresentante = 0;
+        for (j = 0; i <= zonas - 1; i++) {
+            VentaRepresentante = informacion(numRepresentante-1,j) + VentaRepresentante
+            }
+        System.out.println("Las ventas del representante " + numRepresentante + " son :" 	+ VentaRepresentante");    
+        // Se muestra como dato de salida el número de ventas por representante seleccionado
+                           
+        
+    //María Rosa Morales
+    //subprograma Venta Representante por Zona
+    public static void ventaRepresentanteZona(double n, double zonas, int informacion[][]){
+        int k;
+        for (k = 1; k <= n; k++) {
+            
+            }
+                
 
     //Carlos Gustavo Ortiz	
     //Subprograma Mayor venta
