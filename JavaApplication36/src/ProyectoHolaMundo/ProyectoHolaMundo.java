@@ -235,13 +235,14 @@ public class ProyectoHolaMundo {
         int i,j;
         String nombreZona;
         Random r=new Random();
-        if (ingresoDiarioUser = False){
+        if (ingresoDiarioUser = false){
             for (i = 0; i <= n - 1; i++) {
                 for (j = 0; j <= zonas - 1; j++){
                     informacion[i][j]=r.nextInt(10)
                     System.out.print(informacion[i][j]+"\t");
                   }
             }
+	}
         else {
             System.out.flush();
             System.out.println("Recuerde que no pueden haber más de 10 ventas por zona");
@@ -263,21 +264,23 @@ public class ProyectoHolaMundo {
                         case 4:
                             zona = "Centro";
                             break;
-          
-    
-    }
-    
-        
-                    
-
-        
-        
-      
-	
-        
-        
-        
-        
+		    }
+	             do{
+			     System.out.println("Introduzca las ventas del vendedor " + (i+1) + " en la zona " + nombreZona);
+			     m= Integer.parseInt(entrada.nextLine());
+			     
+			     if(  ){
+				     informacion[i][j]=0;
+			     } else{
+				     informacion[i][j]=m;
+			     } while(m >= -1 || m <= 10); 
+		     }
+		}
+	    }
+		System.out.flush();
+		}
+		
+	       
         
 
     public static void reiniciarMatriz(int informacion[][], double n, double m) { //Ya lo arreglo yo (Francisco Rodeles)
