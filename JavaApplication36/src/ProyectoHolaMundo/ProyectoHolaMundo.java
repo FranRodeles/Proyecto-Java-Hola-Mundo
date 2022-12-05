@@ -375,8 +375,27 @@ public class ProyectoHolaMundo {
          String zona = "";
          acumuladorVentasZona=0;
          for (i = 0; i <= n - 1; i++) {
-              acumuladorVentasZona=informacion(i,decisionVentasZona-1) + acumuladorVentasZona
+              acumuladorVentasZona=informacion[i][decisionVentasZona-1] + acumuladorVentasZona
          }
+	     switch(decisionVentasZona){
+			case 1:
+                            zona = "Norte";
+                            break;
+                        case 2:
+                            zona = "Sur";
+                            break;
+                        case 3:
+                            zona = "Este";
+                            break;
+                        case 4:
+                            zona = "Oeste";
+                            break;
+                        case 4:
+                            zona = "Centro";
+                            break;
+	     
+	     }
+	    System.out.println("Las ventas de la zona " + nombreZona + " son " + acumuladorVentasZona");
          
      }
                 
@@ -386,6 +405,7 @@ public class ProyectoHolaMundo {
     public static void ventaZonaRepresentante(double n, double zonas, int informacion[][]){
         int i;
         for (i = 1; i <= zonas - 1; i++) {
+		ventaZona(n,zonas,informacion,i);
         
     }
                 
@@ -408,6 +428,7 @@ public class ProyectoHolaMundo {
     public static void ventaRepresentanteZona(double n, double zonas, int informacion[][]){
         int k;
         for (k = 1; k <= n; k++) {
+		VentasRepresentante(n,zonas,informacion,k);
             
             }
                 
