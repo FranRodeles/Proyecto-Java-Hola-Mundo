@@ -253,7 +253,7 @@ public class ProyectoHolaMundo {
 						 }
 						 
 					 }while(rehacerMatriz=false);
-					  System.out.println("¡Gracias por trabajar con nosotros!)
+					  System.out.println("¡Gracias por trabajar con nosotros!);
 				          verificacion++;
 				          llenadoUser=true;
 							     }
@@ -299,8 +299,7 @@ public class ProyectoHolaMundo {
 	             do{
 			     System.out.println("Introduzca las ventas del vendedor " + (i+1) + " en la zona " + nombreZona);
 			     m= Integer.parseInt(entrada.nextLine());
-			     
-			     if(  ){
+			     if(Integer.toString(m).equals(" ")){
 				     informacion[i][j]=0;
 			     } else{
 				     informacion[i][j]=m;
