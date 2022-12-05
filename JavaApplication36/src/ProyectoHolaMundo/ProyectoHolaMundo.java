@@ -227,8 +227,39 @@ public class ProyectoHolaMundo {
                         n = 8;
                     }
                     //El trabajador puede ingresar la cantidad de ventas realizadas hoy
-                
-                
+		    
+		    // María Rosa Morales
+		    if (usuario.equals("user")) {
+			    ingresoDiarioUser=true;
+			    System.out.println("Bienvenido Vendedor!");
+			    do {
+				    System.out.println("¿Ha finalizado su jornada laboral?(si/no)");
+                                    jornada= entrada.nextLine();
+                                    } while(jornada.equals("si") || jornada.equals("no"));
+		           if(jornada.equals("no")){
+				   System.out.println("Aún no puede ingresar las ventas realizadas el día de hoy");
+				   verificacion++;
+				   }else{System.out.println("Ingrese las ventas realizadas por zona durante esta jornada");
+					 llenarMatriz(n,zonas,informacion,ingresoDiarioUser);
+					 imprimirMatriz(informacion,n,zonas);
+					 do{
+						 System.out.println("¿Son correctos los datos ingresados?(si/no)");
+						 verificacionMatriz= entrada.nextLine();
+						 if(verificacionMatriz.equals("si")){
+							 rehacerMatriz=false
+						 }else{
+							 llenarMatriz(n,zonas,informacion,ingresoDiarioUser);
+						         imprimirMatriz(informacion,n,zonas);
+						 }
+						 
+					 }while(rehacerMatriz=false);
+					  System.out.println("¡Gracias por trabajar con nosotros!)
+				          verificacion++;
+				          llenadoUser=true;
+							     }
+							     }
+							     }
+			                
      //María Rosa Morales           
     //Subprograma llenar Matriz
     public static void llenarMatriz(int n, zonas, int informacion[][], boolean ingresoDiarioUser){
