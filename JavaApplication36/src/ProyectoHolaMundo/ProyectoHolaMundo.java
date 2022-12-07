@@ -1,8 +1,10 @@
 /*
 entrada: cantidad de vendedores, ventas x cada zona
 salidas: cada punto que se puede seleccionar en el menú, la matriz impresa en consola
+
 En el código se identifican los integrantes del equipo que han participado en la adaptación del pseudocódigo creado en 
 Fundamentos de la Programación al lenguaje de Java
+
 Se detalla en qué ha trabajado cada uno.
  */
 package ProyectoHolaMundo;
@@ -256,7 +258,7 @@ public class ProyectoHolaMundo {
     }
     
                     
-
+    // María Rosa Morales
     public static void llenarMatriz(int n, int zonas, int informacion[][]) {
         int i, j,m;
         String nombreZona;
@@ -294,7 +296,7 @@ public class ProyectoHolaMundo {
             }
         }
     }
-
+    // Francisco Rodeles
 
     public static void reiniciarMatriz(int informacion[][], double n, double m) { //Ya lo arreglo yo (Francisco Rodeles)
         int i, j;
@@ -336,7 +338,7 @@ public class ProyectoHolaMundo {
             }
         }
     }
-    
+    // María Rosa Morales
     public static void ventaZona(int n, int zonas, int informacion [][],int decisionVentasZona){
         int i,acumuladorVentasZona;
         String  nombreZona;
@@ -355,14 +357,14 @@ public class ProyectoHolaMundo {
         }
         System.out.println("Las ventas de la zona "+ nombreZona + " son "+acumuladorVentasZona); 
     }
-    
+    // María Rosa Morales
     public static void ventaZonaPorRepresentante(int n,int zonas,int informacion[][]){
         int i;
         for (i =1;i <= zonas;i++){
             ventaZona(n,zonas,informacion,i);
         }
     }
-    
+    // María Rosa Morales
     private static void ventasRepresentante(int n, int zonas,int informacion[][], int numRepresentante) {
         int ventaRepresentante = 0;
         System.out.println("n: "+n);
@@ -372,7 +374,7 @@ public class ProyectoHolaMundo {
 
         System.out.println("Las ventas del representante " + numRepresentante + " son :" + ventaRepresentante);
     }
-    
+    // María Rosa Morales
     public static void ventaRepresentanteXZona(int n, int zonas, int informacion[][]){
 
         int i;
